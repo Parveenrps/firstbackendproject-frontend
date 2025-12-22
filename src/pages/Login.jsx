@@ -7,8 +7,14 @@ function Login(){
         setForm({...form, [e.target.name] : e.target.value})
     }
 
-    const submitHandler= (e)=>{
+    const submitHandler = async (e) => {
         e.preventDefault();
+        try{
+            
+        } catch(error){
+            console.log(error.message)
+        }
+        
     }
     return (
     <>
